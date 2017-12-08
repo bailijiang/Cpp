@@ -9,6 +9,7 @@
 #include "Sales_item.h"
 #include <cctype>
 #include <iostream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 using namespace std;
@@ -34,8 +35,8 @@ int main(int argc, const char *argv[]) {
         throw runtime_error("Data must refer to same ISBN!");
       }
       cout << "item1 + item2 = " << item1 + item2 << endl;
-    } catch (runtime_error) {
-      cout << "\nTry again? Enter y or n" << endl;
+    } catch (runtime_error err) {
+      cout << err.what() << "\nTry again? Enter y or n" << endl;
       char c;
       cin >> c;
       if (!cin || c == 'n') {
