@@ -28,7 +28,7 @@
 		93128F831FD9AC2300F014DD /* test01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test01; sourceTree = BUILT_PRODUCTS_DIR; };
 		93128F861FD9AC2300F014DD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		93128F881FD9AC2300F014DD /* test01.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = test01.1; sourceTree = "<group>"; };
-		93128F8F1FD9AC7500F014DD /* Sales_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sales_item.h; sourceTree = "<group>"; };
+		93DD7C771FDA9B0300748B96 /* Sales_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sales_item.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		93128F7A1FD9AC2300F014DD = {
 			isa = PBXGroup;
 			children = (
-				93128F851FD9AC2300F014DD /* main */,
+				93128F851FD9AC2300F014DD /* test01 */,
 				93128F841FD9AC2300F014DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,14 +58,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93128F851FD9AC2300F014DD /* main */ = {
+		93128F851FD9AC2300F014DD /* test01 */ = {
 			isa = PBXGroup;
 			children = (
-				93128F8F1FD9AC7500F014DD /* Sales_item.h */,
+				93DD7C771FDA9B0300748B96 /* Sales_item.h */,
 				93128F861FD9AC2300F014DD /* main.cpp */,
 				93128F881FD9AC2300F014DD /* test01.1 */,
 			);
-			name = main;
 			path = test01;
 			sourceTree = "<group>";
 		};
@@ -200,6 +199,8 @@
 		93128F8D1FD9AC2300F014DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -207,6 +208,8 @@
 		93128F8E1FD9AC2300F014DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
