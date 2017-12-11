@@ -29,6 +29,7 @@
 		93128F831FD9AC2300F014DD /* test01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test01; sourceTree = BUILT_PRODUCTS_DIR; };
 		93128F861FD9AC2300F014DD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		93128F881FD9AC2300F014DD /* test01.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = test01.1; sourceTree = "<group>"; };
+		9341DF1E1FDE3D890055AA7B /* chapter7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter7.h; sourceTree = "<group>"; };
 		93DA8D311FDAD4A000B0328B /* chapter6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapter6.h; sourceTree = "<group>"; };
 		93DA8D351FDAD88700B0328B /* fact.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fact.cc; sourceTree = "<group>"; };
 		93DD7C771FDA9B0300748B96 /* Sales_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sales_item.h; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 				93128F881FD9AC2300F014DD /* test01.1 */,
 				93DA8D311FDAD4A000B0328B /* chapter6.h */,
 				93DA8D351FDAD88700B0328B /* fact.cc */,
+				9341DF1E1FDE3D890055AA7B /* chapter7.h */,
 			);
 			path = test01;
 			sourceTree = "<group>";
