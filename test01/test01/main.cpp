@@ -6,7 +6,7 @@
 //  Copyright (c) 2017 home. All rights reserved.
 //
 #include "Sales_item.h"
-#include "chapter6.h"
+//#include "chapter6.h"
 #include "chapter7.h"
 #include <iostream>
 #include <string>
@@ -14,35 +14,41 @@
 
 using namespace std;
 
-struct Sales_data {
-  string bookNo;
-  unsigned units_sold = 0;
-  double revenue = 0.0;
-};
-
 int main(int argc, const char *argv[]) {
 
+#if 1
   Sales_data total;
-  if (cin >> total.bookNo && cin >> total.units_sold && cin >> total.revenue) {
+  if (read(cin, total)) {
     Sales_data trans;
-    while (cin >> trans.bookNo && cin >> trans.units_sold &&
-           cin >> trans.revenue) {
-      if (total.bookNo == trans.bookNo) {
-        total.units_sold += trans.units_sold;
-        total.revenue += trans.revenue;
+    while (read(cin, trans)) {
+      if (total.isbn() == trans.isbn()) {
+        total.combine(trans);
       } else {
-        cout << total.bookNo << " " << total.units_sold << " " << total.revenue
-             << endl;
+        print(cout, total) << endl;
         total = trans;
       }
     }
-    cout << total.bookNo << " " << total.units_sold << " " << total.revenue
-         << endl;
+    print(cout, total) << endl;
 
   } else {
     cerr << "No data?!" << endl;
     return -1;
   }
+#endif
+
+#if 0
+  Person Client1("Bryan.bai", "home");
+  Client1.Show_info();
+  cout << Client1.getname() << endl;
+  cout << Client1.getaddress() << endl;
+
+  cout << "PLease input one person name and address" << endl;
+  Person p1("", "");
+
+  read(cin, p1);
+  print(cout, p1) << endl;
+
+#endif
 
   return 0;
 }
