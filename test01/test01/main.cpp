@@ -50,5 +50,7 @@ int main(int argc, const char *argv[]) {
 
 #endif
 
+  cout << "vs or xcode ???" << endl;
+
   return 0;
 }
