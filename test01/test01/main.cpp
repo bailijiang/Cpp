@@ -7,6 +7,7 @@
 //
 #include "Sales_item.h"
 //#include "chapter6.h"
+#include "Screen.h"
 #include "chapter7.h"
 #include <iostream>
 #include <string>
@@ -15,7 +16,6 @@
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-
 #if 0
   Sales_data total;
   if (read(cin, total)) {
@@ -43,12 +43,17 @@ int main(int argc, const char *argv[]) {
   cout << Client1.getaddress() << endl;
 
   cout << "PLease input one person name and address" << endl;
-  Person p1("", "");
+  // Person p1("", "");
 
-  read(cin, p1);
-  print(cout, p1) << endl;
+  //  read(cin, p1);
+  //  print(cout, p1) << endl;
+
+  Person p2(cin);
+  print(cout, p2) << endl;
 
 #endif
+
+#if 0
 
   Sales_data item1;
   print(cout, item1) << endl;
@@ -61,7 +66,19 @@ int main(int argc, const char *argv[]) {
 
   Sales_data item4(cin);
   print(cout, item4) << endl;
-  
+
   pause();
+#endif
+
+#if 1
+
+  Screen myScreen(5, 5, 'X');
+  myScreen.move(4, 0).set('#').display(cout);
+  cout << endl;
+  myScreen.display(cout);
+  cout << endl;
+
+#endif
+
   return 0;
 }
