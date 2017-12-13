@@ -16,7 +16,7 @@ using namespace std;
 
 int main(int argc, const char *argv[]) {
 
-#if 1
+#if 0
   Sales_data total;
   if (read(cin, total)) {
     Sales_data trans;
@@ -50,9 +50,18 @@ int main(int argc, const char *argv[]) {
 
 #endif
 
-  cout << "vs or xcode ???" << endl;
-  cout << "vs or xcode222 ???" << endl;
-  cout << "vs or xcode333 " << endl;
+  Sales_data item1;
+  print(cout, item1) << endl;
 
+  Sales_data item2("x-202-3456-01", 20, 23.45);
+  print(cout, item2) << endl;
+
+  Sales_data item3("x-303-3456-03");
+  print(cout, item3) << endl;
+
+  Sales_data item4(cin);
+  print(cout, item4) << endl;
+  
+  pause();
   return 0;
 }
