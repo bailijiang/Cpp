@@ -80,5 +80,6 @@ int main(int argc, const char *argv[]) {
 
 #endif
 
+  pause();
   return 0;
 }

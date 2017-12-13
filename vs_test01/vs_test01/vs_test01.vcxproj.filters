@@ -29,5 +29,8 @@
     <ClInclude Include="..\..\test01\test01\chapter7.h">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\test01\test01\Screen.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
