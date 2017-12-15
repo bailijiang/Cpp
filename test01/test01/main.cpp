@@ -53,7 +53,7 @@ int main(int argc, const char *argv[]) {
 
 #endif
 
-#if 0
+#if 1
 
   Sales_data item1;
   print(cout, item1) << endl;
@@ -67,10 +67,9 @@ int main(int argc, const char *argv[]) {
   Sales_data item4(cin);
   print(cout, item4) << endl;
 
-  pause();
 #endif
 
-#if 1
+#if 0
 
   Screen myScreen(5, 5, 'X');
   myScreen.move(4, 0).set('#').display(cout);
