@@ -8,7 +8,8 @@
 #include "Sales_item.h"
 //#include "chapter6.h"
 #include "Screen.h"
-#include "chapter7.h"
+//#include "chapter7.h"
+#include "chapter8.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -70,13 +71,22 @@ int main(int argc, const char *argv[]) {
   pause();
 #endif
 
-#if 1
+#if 0
 
   Screen myScreen(5, 5, 'X');
   myScreen.move(4, 0).set('#').display(cout);
   cout << endl;
   myScreen.display(cout);
   cout << endl;
+
+#endif
+
+#if 1
+    cout << "Please input a string: " << endl;
+    istream& is = func81(cin);
+	cout << is.rdstate() << endl;
+
+
 
 #endif
 
